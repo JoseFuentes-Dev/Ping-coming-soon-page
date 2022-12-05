@@ -1,0 +1,97 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .top{
+    padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .topimg{
+          width: 40px;
+        }
+        h1{
+            font-size: 1.4em;
+            font-weight: 300;
+            color: var(--Gray);
+            span{
+                font-weight: 700;
+                color: var(--Very-Dark-Blue);
+            }
+        }
+        p{
+            font-size: .8em;
+            color: var(--Very-Dark-Blue);
+        }
+        .btncontain{
+            margin-top: -25px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+          #emailOK{
+            font-size: .6em;
+            color: var( --Light-Red);
+            text-align: center;
+
+          }
+          input{
+            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid var(  --Pale-Blue);
+            padding-left: 20px;
+                  }
+          ::placeholder{
+            color: var(--Pale-Blue);
+            font-size: .8em;
+          }
+          button{
+            padding: 10px;
+            border-radius: 20px;
+           border: none;
+           background: var(--Blue);
+           color: #fff; 
+           font-weight: 600;      
+           font-size: .65em;
+           box-shadow: 0 4px 10px hsla(223, 87%, 63%,.4);;
+           
+           &:hover{
+           filter: brightness(1.2);
+           }
+        }
+        }
+    }
+    img{
+        margin-top: 30px;
+        width: 270px;
+    }
+    .social{
+        margin-top: 70px;
+        display: flex;
+        gap: 20px;
+        .fa-facebook{
+          padding-left: 11px;
+        }
+        i{
+            width: 1px;
+            color: var(--Blue);
+            border-radius: 50%;
+            border: 1px solid var(--Pale-Blue);
+           padding: 8px 22px 7px 8px;
+           cursor: pointer;
+           &:hover{
+            color:#fff;
+            background: var(--Blue);
+           }
+        }
+    }
+    p{
+        color: var(--Gray);
+        font-size: .7em;
+        margin-bottom: 30px;
+    }
+}
